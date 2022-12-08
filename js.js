@@ -4,7 +4,7 @@ function fetchTwitchToken() {
 	"method": "POST",
 	"timeout": 0
   }).done(function (response) {
-	document.body.innerHTML = '<pre style="word-wrap: break-word; white-space: pre-wrap;">{"access_token": ' + response.access_token + ', "expires_in": ' + response.expires_in + '}"<pre>';
+	document.body.innerHTML = '<pre style="word-wrap: break-word; white-space: pre-wrap;">' + response.access_token + '<pre>';
   });
 }
 
