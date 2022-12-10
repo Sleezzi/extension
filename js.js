@@ -10,4 +10,4 @@ function FetchVideo() {
   });
 };
 
-setInterval(function() { FetchVideo(); }, 30000000);
+setInterval(function() { FetchVideo(); }, 30000);
