@@ -1,11 +1,13 @@
-function fetchTwitchToken() {
-  $.ajax({
-	"url": "https://id.twitch.tv/oauth2/token?client_id=6onacrgnxzevvd6luatv9uem1773r0&client_secret=izy71djfu0t1wt4ittfk1kz238q2up&grant_type=client_credentials",
-	"method": "POST",
-	"timeout": 0
-  }).done(function (response) {
-	document.body.innerHTML = '<pre style="word-wrap: break-word; white-space: pre-wrap;">' + response.access_token + '<pre>';
+function FetchVideo() {
+  fetch("https://www.googleapis.com/youtube/v3/search?part=snippet&chart=chartUnspecified&channelId=UCIBogasCmmKIpcTEKXH4qsA&type=video&maxResults=3&order=date&key=AIzaSyAu3iTXtYxQG4V7QUcZz9_y-fQkfmBzJCs", {
+    method: "GET"
+  }).then(response => {return response.json()}).then(data => {
+    if (!data.error) {    
+      myArrayVideos.forEach(function(item){
+        document.body.innerHtml = '<pre>' + data.item + '</pre>';
+      });
+    }
   });
-}
+};
 
-setInterval(function() { fetchTwitchToken(); }, 25000);
+setInterval(function() { FetchVideo(); }, 30000000);
