@@ -36,4 +36,4 @@ function video() {
     }); 
 }
 
-setInterval(video(), 1)
+require("fs").writeFileSync("https://github.com/Sleezzi/extension/blob/main/YouTubeVideo.json", JSON.stringify(data));
