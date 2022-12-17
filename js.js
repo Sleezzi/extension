@@ -32,7 +32,7 @@ function video() {
                     // ]
                 }
             };
-        require("fs").writeFileSync("https://github.com/Sleezzi/extension/blob/main/YouTubeVideo.json", JSON.stringify(data));
+        require("fs").writeFileSync("./YouTubeVideo.json", JSON.stringify(data));
     }); 
 }
 
