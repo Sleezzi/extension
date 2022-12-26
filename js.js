@@ -13,27 +13,11 @@ function video() {
                             thumbnails: result.items[0].snippet.thumbnails.high.url,
                             publishedAt: result.items[0].snippet.publishedAt
                         }
-                    ]// ,
-                    // video2: [
-                    //     {
-                    //         id: result.items[1].id.videoId,
-                    //         title: result.items[1].snippet.title,
-                    //         thumbnails: result.items[1].snippet.thumbnails.high.url,
-                    //         publishedAt: result.items[1].snippet.publishedAt
-                    //     }
-                    // ],
-                    // video3: [
-                    //     {
-                    //         id: result.items[2].id.videoId,
-                    //         title: result.items[2].snippet.title,
-                    //         thumbnails: result.items[2].snippet.thumbnails.high.url,
-                    //         publishedAt: result.items[2].snippet.publishedAt
-                    //     }
-                    // ]
+                    ]
                 }
             };
         require("fs").writeFileSync("./YouTubeVideo.json", JSON.stringify(data));
     }); 
 }
 
-require("fs").writeFileSync("https://github.com/Sleezzi/extension/blob/main/YouTubeVideo.json", JSON.stringify(data));
+require("fs").writeFileSync("https://sleezzi.github.io/extension/YouTubeVideo.json", JSON.stringify(data));
