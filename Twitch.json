@@ -1,9 +1,9 @@
 {
     "items": [
         {
-            "statut": "Online",
-            "title": "Just Walking",
-            "categorie": "Just chatting",
+            "statut": "Offline",
+            "title": "",
+            "categorie": "",
             "userName": "Sleezzi"
         }
     ]
