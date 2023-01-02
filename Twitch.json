@@ -1,9 +1,9 @@
 {
     "items": [
         {
-            "statut": "Offline",
-            "title": "",
-            "categorie": "",
+            "statut": "Online",
+            "title": "Bonjour tout le monde",
+            "categorie": "Just chatting",
             "userName": "Sleezzi"
         }
     ]
